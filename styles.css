@@ -49,3 +49,28 @@ h1,h2{margin:0;font-family:Impact,"Arial Narrow",Arial,sans-serif;text-transform
 .hero-photo{object-position:68% center}
 .photo-service span{font-size:19px}
 }
+
+/* Balanced homepage scale */
+.hero{min-height:560px;height:min(68vw,620px)}
+.hero-content{width:min(650px,92vw);padding:58px 5vw}
+.hero h1{font-size:clamp(42px,4.5vw,66px);line-height:.98}
+.hero .lead{max-width:610px;font-size:clamp(16px,1.2vw,19px);line-height:1.55}
+.hero .actions{margin-top:24px}
+.photo-service img{height:210px}
+.photo-service span{min-height:54px;padding:0 18px;font-size:19px}
+.section h2,.split h2,.cta h2{font-size:clamp(34px,3.6vw,54px)}
+@media(max-width:900px){
+.hero{min-height:570px;height:auto}
+.hero-content{width:min(620px,94vw);padding:72px 5vw 48px}
+.hero h1{font-size:clamp(38px,8vw,56px)}
+.photo-service{max-width:720px;width:100%;margin-inline:auto}
+.photo-service img{height:auto;aspect-ratio:16/8}
+}
+@media(max-width:560px){
+.hero{min-height:540px}
+.hero-content{padding:74px 22px 38px}
+.hero h1{font-size:clamp(36px,11vw,48px)}
+.hero .lead{font-size:16px;line-height:1.45}
+.photo-services{padding:10px 14px 20px}
+.photo-service span{font-size:17px}
+}
