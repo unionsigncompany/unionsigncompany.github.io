@@ -9,7 +9,7 @@ if (form) {
   function requestDetails() {
     const data = new FormData(form);
     const service = data.get("service");
-    const recipient = service === "Permitting" ? "permits@unionsignco.com"
+    const recipient = service === "Permitting" ? "designs@unionsignco.com"
       : service === "New sign design / fabrication coordination" ? "designs@unionsignco.com"
       : "sales@unionsignco.com";
     const subject = "Website quote request: " + (data.get("company") || data.get("name"));
