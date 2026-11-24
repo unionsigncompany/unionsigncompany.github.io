@@ -8,10 +8,7 @@ if (form) {
 
   function requestDetails() {
     const data = new FormData(form);
-    const service = data.get("service");
-    const recipient = service === "Permitting" ? "designs@unionsignco.com"
-      : service === "New sign design / fabrication coordination" ? "designs@unionsignco.com"
-      : "sales@unionsignco.com";
+    const recipient = "sales@unionsignco.com";
     const subject = "Website quote request: " + (data.get("company") || data.get("name"));
     const body = [["Name","name"],["Company","company"],["Phone","phone"],["Email","email"],
       ["Service address","address"],["Service","service"],["Project details","details"]]
